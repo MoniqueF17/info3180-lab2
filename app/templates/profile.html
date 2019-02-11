@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block main%}
+    <head>
+        <title>INFO3180 Lab 2</title>
+    </head>
+    <body>
+        
+        <div id=name>
+            <img src="{{url_for('static', filename='profilepic.jpeg')}}" id="ProfilePic"><br>
+            Monique Francis
+        </div>
+        
+        <div class="info">
+            @mfrancis <br>
+            Kingston, Jamaica <br>
+            Joined January, 2019
+        </div>
+        
+        <div class="bio">
+            I am a smart and talented young woman who loves website 
+            design and development. Contact me if you'd like to work 
+            together on a new project.
+        </div>
+        
+        <div class="stats">
+            <div id="post">
+                7<br> Posts
+            </div>
+            <div id="fol1">
+                100<br>
+                Following
+            </div>
+            <div id="fol2">
+                250<br>
+                Followers
+            </div>
+        </div>
+        <div class="button">
+            <button type="button">Follow</button>
+        </div>
+        
+    </body>
+{% endblock %}
